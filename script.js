@@ -41,7 +41,7 @@ var car_brands = []
 var time_in = []
 var time_out = []
 var fares = []
-var place = 'Street X'
+var place = 'MG Road'
 
 document.getElementById("myTime1").defaultValue = new Date().toLocaleTimeString('it-IT')
 document.getElementById("myTime2").defaultValue = new Date().toLocaleTimeString('it-IT')
@@ -88,10 +88,10 @@ $(".calc_fare").click(function () {
     else {
         fare += (10 + ((minutes_elapsed - 30) / 30) * 5)
     }
-
+    fare=Math.round(fare*100)/100 
     fares.push(fare)
 
-    alert('fare is ' + fare + ' rs')
+    alert('Your Fare is Rs. ' + fare)
 
 
 })
@@ -101,7 +101,7 @@ $(".calc_fare").click(function () {
 $(".pay").click(function () {
 
 
-    alert('fare paid !')
+    alert('Fare Paid !')
 
     $('.table').css("display", "initial")
 
@@ -112,7 +112,7 @@ $(".pay").click(function () {
 
         table_data += '<tr>'
 
-        table_data += '<td>' + '20/10/2020' + '</td>'
+        table_data += '<td>' + '23/10/2020' + '</td>'
         table_data += '<td>' + car_nos[i] + '</td>'
         table_data += '<td>' + car_brands[i] + '</td>'
         table_data += '<td>' + time_in[i] + '</td>'
