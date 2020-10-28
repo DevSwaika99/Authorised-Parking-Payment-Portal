@@ -112,7 +112,7 @@ $(".pay").click(function () {
 
         table_data += '<tr>'
 
-        table_data += '<td>' + '23/10/2020' + '</td>'
+        table_data += '<td>' + '28/10/2020' + '</td>'
         table_data += '<td>' + car_nos[i] + '</td>'
         table_data += '<td>' + car_brands[i] + '</td>'
         table_data += '<td>' + time_in[i] + '</td>'

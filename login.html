@@ -20,7 +20,7 @@
         }
 
         .container {
-            margin: 200px 300px;
+            margin: 150px 300px;
             padding: 50px 20px;
             border: rgb(49, 49, 49) 2px solid;
         }
@@ -76,10 +76,74 @@
             font-size: 250%;
         }
 
+        .navbar {
+            display: flex;
+            min-height: 10vh;
+            align-items: baseline;
+            align-content: center;
+            font-size: 1rem;
+            padding-top: 15px;
+            padding-bottom: 5px;
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        ul li:first-child {
+            margin-left: 500px;
+        }
+
+        .brand {
+            flex-basis: 50%;
+            color: rgb(27, 27, 27);
+            margin-left: 20px;
+        }
+
+        hr {
+            background-color: rgb(197, 107, 34);
+            width: 60px;
+            height: 3px;
+            margin-top: 10px;
+
+        }
+
+        ul li a:link,
+        ul li a:visited {
+            text-decoration: none;
+            margin: 2rem;
+            padding-bottom: 21px;
+            color: rgb(27, 27, 27);
+            text-transform: uppercase;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        ul li a:active,
+        ul li a:hover {
+            border-bottom: 2px solid #8f3704;
+        }
+
     </style>
 </head>
 
 <body>
+    <header class="head">
+        <nav class="navbar">
+            <div class="brand">
+                <h1>Park Safe</h1><hr>
+            </div>
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <h1>Login</h1>
         <div class="container2">
